@@ -1,1 +1,45 @@
-/* место для вашего кода */
+.header {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between; 
+    padding: 92px 24px 96px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24;
+}
+
+.header__menu-link {
+    font-size: 18px;
+    color: black;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.header__menu-item_active {
+    display: block;
+}
+
+.header__menu-item {
+    margin: 20px;
+    align-self: center;
+}
+
+.header__menu-item_active .header__menu-link {
+    text-decoration: none;
+}
+
+.header__logo-image {
+    height: 105px;
+    width: 148px;
+    align-self: center;
+}
