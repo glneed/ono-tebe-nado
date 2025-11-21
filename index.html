@@ -11,16 +11,15 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-left">
         <nav class="header__menu">
             <ul class="header__menu-list">
                 <li class="header__menu-item header__menu-item_active">
                     <a class="header__menu-link" href="#0">главная</a>
                 </li>
-                <li class="header__menu-item">
+                <li class="header__menu-item header__menu-item_nonactive">
                     <a class="header__menu-link" href="#0">посмотреть лоты</a>
                 </li>
-                <li class="header__menu-item">
+                <li class="header__menu-item header__menu-item_nonactive">
                     <a class="header__menu-link" href="#0">об аукционе</a>
                 </li>
             </ul>
@@ -30,13 +29,54 @@
           src="./images/logo-black.svg"
           alt="логотип проекта"
         />
+      <div class="header-right">
+        <nav class="header__menu-right">
+          <ul class="header__menu-adres">
+              <li class="header__menu-item2">
+                  <a class="header__menu-link" href="tel:+99995555555">+9 999 555 5555</a>
+              </li>
+              <li class="header__menu-item2">
+                  <a class="header__menu-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+              </li>
+              <li class="header__menu-item2 header__menu-item_active header__menu-link">
+                  наб. Принсенграхт 263- <br/> 265, Амстердам
+              </li>
+        </nav>
       </div>
-    <div class="header-right">
-
-    </div>
     </header>
     <main>
-      <section class="cover"></section>
+      <section class="cover">
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <div class="accent-span text-left">
+            <span class="o">о</span>
+            <span class="no">но</span>
+          </div>
+          <div class="accent-span text-center">
+            <span class="te">те</span>
+            <span class="be">бе</span>
+          </div>
+          <div class="accent-span text-right">
+            <span class="n">н</span>
+            <span class="ad">ад</span>
+            <span class="o2">о</span>
+          </div>
+        </h1>
+        <div class="text-aukcion">
+          <span class="aukcion">Аукцио</span>
+          <span class="pr1">н </span>
+          <span class="veshey">вещей</span>
+          <span class="pr2">, </span>
+          <span class="pr3">в </span>
+          <span class="kotorye">которы</span>
+          <span class="pr4">е </span>
+          <span class="nikto">никт</span>
+          <span class="pr5">о </span>
+          <span class="ne">н</span>
+          <span class="pr6">е </span>
+          <span class="veril">верил</span>
+        </div>
+      </section>
       <section class="lots"></section>
       <section class="about"></section>
     </main>
