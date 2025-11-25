@@ -81,6 +81,12 @@
   z-index: -2;
 }
 
+.cover__title {
+  width: 1000px;
+  height: 355px;
+  margin: 165px 50px 0 50px;
+}
+
 .accent-span {
   display: flex;
   gap: 0;
@@ -94,23 +100,20 @@
 }
 
 .text-left {
-  top: 165px;
-  left: 50px;
   width: 316px;
   height: 115px;
 }
 
 .text-center {
-  margin-bottom: 20px;
-  top: 300px;
-  left: 336px;
+  margin-top: 135px;
+  margin-left: 286px;
   width: 369px;
   height: 100px;
 }
 
 .text-right {
-  top: 420px;
-  right: 50px;
+  margin-top: 255px;
+  margin-left: 583px;
   width: 417px;
   height: 100px;
 }
@@ -154,7 +157,7 @@
 
 .cover__description {
   display: flex;
-  margin: 655px 50px 51px 78px;
+  margin: 135px 50px 51px 78px;
   width: calc(637px + 79px + 256px);
   height: 51px;
 }
