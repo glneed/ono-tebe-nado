@@ -3,7 +3,7 @@
   flex-direction: row;
   flex-shrink: 0;
   width: 1052px;
-  height: 105px;
+  min-height:105px;
   align-items: flex-start;
   margin: 92px 24px 96px;
 }
@@ -17,32 +17,31 @@
   list-style-type: circle;
 }
 
-.header__menu-item:first-child {
-  display: block;
+.menu-item:first-child {
+  list-style: none;
 }
 
 .header__menu {
   display: flex;
-  height: 105px;
   align-items: center;
   padding: 0 0 0 27px;
 }
 
-.header__menu-link {
+.menu-link {
   font-size: 18px;
   color: black;
   line-height: 24.3px;
-  letter-spacing: 1%;
   text-align: left;
+  font-style: normal;
   text-underline-offset: 4px;
 }
 
-.header__menu-item {
+.menu-item {
   margin: 44px 0 40px;
   align-self: center;
 }
 
-.header__menu-item_active .header__menu-link {
+.menu-item_active .menu-link {
   text-decoration: none;
 }
 
@@ -59,32 +58,35 @@
   padding: 5px 25.48px 2px 0;
 }
 
-.header__menu-item2 {
+.menu-item-contacts {
   display: block;
 }
 
-.header__menu-item2 .header__menu-link {
+.menu-item-contacts .menu-link {
   display: flex;
   flex-wrap: wrap;
   text-underline-offset: 4px;
 }
 
 .cover {
-  top: 293px;
-  height: 757px;
+  display: flex;
+  flex-direction: column;
+  min-height: 757px;
   width: 1100px;
   background-image: url(../images/cover.jpg);
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
-  z-index: -2;
+  position: relative;
+  z-index: 0;
 }
 
 .cover__title {
   width: 1000px;
   height: 355px;
-  margin: 165px 50px 0 50px;
+  margin: 165px 50px 0px 50px;
+  position: relative;
+  z-index: 2;
 }
 
 .accent-span {
@@ -93,65 +95,46 @@
   color: rgba(255, 255, 255, 1);
   font-size: 100px;
   font-weight: 700;
-  line-height: 115%;
   text-align: left;
   text-transform: uppercase;
-  position: absolute;
 }
 
 .text-left {
   width: 316px;
-  height: 115px;
+  line-height: 115%;
 }
 
 .text-center {
-  margin-top: 135px;
-  margin-left: 286px;
+  margin: 20px 345px 0 286px;
   width: 369px;
-  height: 100px;
+  line-height: 100%;
 }
 
 .text-right {
-  margin-top: 255px;
-  margin-left: 583px;
+  margin: 20px 0 0 583px;
   width: 417px;
-  height: 100px;
+  line-height: 100%;
 }
 
 .overlay {
-  width: 1100px;
+  width: 100%;
   height: 757px;
   background: rgba(0, 0, 0, 1);
   opacity: 0.6;
   position: absolute;
-  z-index: -1;
+  inset: 0; 
+  z-index: 1;
 }
 
-.o {
+.letter-spacing-standart {
   letter-spacing: calc(100px * 0.3);
 }
 
-.no {
+.letter-spacing-extended {
   letter-spacing: calc(100px * 0.6);
 }
 
-.te {
-  letter-spacing: calc(100px * 0.3);
-}
-
-.be {
-  letter-spacing: calc(100px * 0.6);
-}
-
-.n {
-  letter-spacing: calc(100px * 0.6);
-}
-
-.ad {
-  letter-spacing: calc(100px * 0.3);
-}
-
-.o-2 {
+.no-letter-spacing {
   letter-spacing: 0;
 }
 
@@ -159,26 +142,26 @@
   display: flex;
   margin: 135px 50px 51px 78px;
   width: calc(637px + 79px + 256px);
-  height: 51px;
+  position: relative;
+  z-index: 2;
 }
 
 .text-aukcion {
   display: flex;
-  white-space: nowrap;
   gap: 0;
-  margin: 12px 79px 11px 0; /*поменять*/
+  margin: 12px 79px 11px 0;
   width: 637px;
-  height: 28px;
   color: rgba(255, 255, 255, 1);
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
   text-align: justify;
   text-transform: uppercase;
-  word-spacing: 19px;
+  word-spacing: 18px;
 }
 
 .bet-button {
+  font-family:inherit; 
   width: 256px;
   height: 51px;
   border: 1px solid rgba(255, 255, 255, 1);
@@ -190,7 +173,6 @@
   font-size: 22px;
   font-weight: 500;
   line-height: 26px;
-  letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -198,21 +180,17 @@
 .lots {
   display: flex;
   flex-direction: column;
-  margin: 1032px 24px 146px 24px;
+  margin: 179px 24px 146px 24px;
   width: 1052px;
-  height: 692px;
 }
 
 .title {
   margin-left: 40px;
   width: 121px;
-  height: 47px;
   color: rgba(0, 0, 0, 1);
-  font-family: Raleway;
   font-size: 40px;
   font-weight: 700;
   line-height: 47px;
-  letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
 }
@@ -221,13 +199,12 @@
   display: grid;
   margin-top: 27px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
   gap: 25px;
 }
-
-.lot-1 {
+/* а тут поебаться в цсс*/
+.children {
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   background-image: url(../images/card-lot-01.jpg);
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -235,9 +212,9 @@
   position: relative;
 }
 
-.lot-2 {
+.door {
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   background-image: url(../images/card-lot-02.jpg);
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -245,22 +222,14 @@
   position: relative;
 }
 
-.lot-3 {
+.abstraction {
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   background-image: url(../images/card-lot-03.jpg);
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-}
-
-.overlay-2 {
-  width: 334px;
-  height: 563px;
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  z-index: 1;
 }
 
 .card__title {
@@ -272,7 +241,6 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 120%;
-  letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
   z-index: 2;
@@ -351,8 +319,8 @@
 }
 
 .about__text-1 {
-  width: 688px;
-  height: 120px;
+  width: 693px;
+  height: 312px;
   margin-top: 100px;
   color: rgba(0, 0, 0, 1);
   font-size: 20px;
