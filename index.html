@@ -29,40 +29,38 @@
     <a>
       <img class="header__logo-image" src="./images/logo-black.svg" alt="логотип проекта" />
     </a>
-    <div class="header-right">
-      <address class="menu">
-        <ul class="menu-adres">
-          <li class="menu-item-contacts">
-            <a class="menu-link" href="tel:+99995555555">+9 999 555 5555</a>
-          </li>
-          <li class="menu-item-contacts">
-            <a class="menu-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          </li>
-          <li class="menu-item-contacts menu-item_active menu-link">
-            наб. Принсенграхт 263- <br />
-            265, Амстердам
-          </li>
-        </ul>
-      </address>
-    </div>
+    <address class="menu">
+      <ul class="menu-adres">
+        <li class="menu-item-contacts">
+          <a class="menu-link" href="tel:+99995555555">+9 999 555 5555</a>
+        </li>
+        <li class="menu-item-contacts">
+          <a class="menu-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        </li>
+        <li class="menu-item-contacts menu-item_active menu-link">
+          наб. Принсенграхт 263- <br />
+          265, Амстердам
+        </li>
+      </ul>
+    </address>
   </header>
   <main>
     <section class="cover">
       <div class="overlay"></div>
       <h1 class="cover__title">
-        <div class="accent-span text-left">
+        <span class="accent-span text-left">
           <span class="letter-spacing-standart">о</span>
           <span class="letter-spacing-extended">но</span>
-        </div>
-        <div class="accent-span text-center">
+        </span>
+        <span class="accent-span text-center">
           <span class="letter-spacing-standart">те</span>
           <span class="letter-spacing-extended">бе</span>
-        </div>
-        <div class="accent-span text-right">
+        </span>
+        <span class="accent-span text-right">
           <span class="letter-spacing-extended">н</span>
           <span class="letter-spacing-standart">ад</span>
           <span class="no-letter-spacing">о</span>
-        </div>
+        </span>
       </h1>
       <div class="cover__description">
         <p class="text-aukcion">Аукцион вещей, в которые никто не верил</p>
@@ -75,10 +73,10 @@
       <h2 class="title">лоты</h2>
       <ul class="grid">
         <li class="children cont">
-          <a href="#0" class="asd">
+          <a href="#0" class="common-link">
             <article class="description">
-              <h3 class="card__title">
-                Фильм режиссёра, который бросил киношколу</h3>
+              <h2 class="card__title">
+                Фильм режиссёра, который бросил киношколу</h2>
               <p class="card__text">
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                 ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
@@ -88,10 +86,10 @@
           </a>
         </li>
         <li class="door cont">
-          <a href="#0" class="asd">
+          <a href="#0" class="common-link">
             <article class="description">
-              <h3 class="card__title">
-                Книга, где описан один скучный день из жизни рекламного агента</h3>
+              <h2 class="card__title">
+                Книга, где описан один скучный день из жизни рекламного агента</h2>
               <p class="card__text">
                 Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
                 переходами на древнеанглийский. В ней одновременно рассказывается
@@ -104,10 +102,10 @@
           </a>
         </li>
         <li class="abstraction cont">
-          <a href="#0" class="asd">
+          <a href="#0" class="common-link">
             <article class="description">
-              <h3 class="card__title">
-                Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+              <h2 class="card__title">
+                Картина, которую повторит даже 5-летний сын маминой подруги</h2>
               <p class="card__text">
                 Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
                 похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
@@ -126,22 +124,24 @@
         <img class="about__logo-image" src="./images/logo-white.svg" alt="логотип проекта" />
       </div>
       <div class="inscription">
-        <h3 class="about__title">Об аукционе</h3>
-        <p class="about__text text-top">
-          Здесь вы не встретите очередное пафосное собрание невероятно
-          дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
-          один аукцион. Потому что кому нужен дневник девочки-подростка или
-          картина, которую может нарисовать даже ребёнок? Кому нужны все эти
-          странные вещи, созданные любителями?
-        </p>
-        <p class="about__text text-bottom">
-          Слишком сложные или, наоборот, слишком простые. Опережающие своё
-          время. В пух и прах растерзанные критиками. Непринятые и непонятые.
-          Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без
-          этих лотов
-          невозможно представить современную культуру. Когда в эти вещи не
-          верил никто, продолжали верить их создатели. И сейчас эти лоты стали
-          культовыми.
+        <h2 class="about__title">Об аукционе</h2>
+        <p class="about__text">
+          <span>
+            Здесь вы не встретите очередное пафосное собрание невероятно
+            дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
+            один аукцион. Потому что кому нужен дневник девочки-подростка или
+            картина, которую может нарисовать даже ребёнок? Кому нужны все эти
+            странные вещи, созданные любителями?
+          </span>
+          <span>
+            Слишком сложные или, наоборот, слишком простые. Опережающие своё
+            время. В пух и прах растерзанные критиками. Непринятые и непонятые.
+            Когда-то они казались просто неудачными. Но, несмотря на критику,
+            кажущуюся простоту или сложность, сейчас без этих лотов
+            невозможно представить современную культуру. Когда в эти вещи не
+            верил никто, продолжали верить их создатели. И сейчас эти лоты стали
+            культовыми.
+          </span>
         </p>
       </div>
     </section>
@@ -177,15 +177,15 @@
       </ul>
     </nav>
     <ul class="socials">
-      <a href="#0">
-        <img class="logo" src="./images/yt.svg" alt="логотип youtube" />
-      </a>
-      <a href="#0">
-        <img class="logo" src="./images/vk.svg" alt="логотип VK" />
-      </a>
-      <a href="#0">
-        <img class="logo" src="./images/pinterest.svg" alt="логотип Pinterest" />
-      </a>
+      <li><a href="#0">
+          <img class="logo" src="./images/yt.svg" alt="логотип youtube" />
+        </a></li>
+      <li><a href="#0">
+          <img class="logo" src="./images/vk.svg" alt="логотип VK" />
+        </a></li>
+      <li><a href="#0">
+          <img class="logo" src="./images/pinterest.svg" alt="логотип Pinterest" />
+        </a></li>
     </ul>
   </footer>
 </body>
